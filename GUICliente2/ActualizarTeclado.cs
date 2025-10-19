@@ -22,9 +22,14 @@ namespace GUICliente2
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void textCodigo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

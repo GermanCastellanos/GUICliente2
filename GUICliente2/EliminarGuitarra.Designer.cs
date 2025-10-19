@@ -193,7 +193,7 @@
             this.btnCerrar.TabIndex = 18;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.button2_Click);
+            this.btnCerrar.Click += new System.EventHandler(this.btbCerrar_Click);
             // 
             // btnBuscar
             // 

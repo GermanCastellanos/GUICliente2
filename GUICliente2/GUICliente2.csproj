@@ -112,6 +112,18 @@
     <Compile Include="AgregarFunda.Designer.cs">
       <DependentUpon>AgregarFunda.cs</DependentUpon>
     </Compile>
+    <Compile Include="CargarPreset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargarPreset.Designer.cs">
+      <DependentUpon>CargarPreset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuardarPreset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuardarPreset.Designer.cs">
+      <DependentUpon>GuardarPreset.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListarTeclado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarFunda.resx">
       <DependentUpon>AgregarFunda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarPreset.resx">
+      <DependentUpon>CargarPreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuardarPreset.resx">
+      <DependentUpon>GuardarPreset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListarGuitarra.resx">
       <DependentUpon>ListarGuitarra.cs</DependentUpon>

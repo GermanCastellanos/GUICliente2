@@ -40,7 +40,7 @@ namespace GUICliente2
             gui.Show();
         }
 
-        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buscarGuitarra_Click(object sender, EventArgs e)
         {
             BuscarGuitarra gui = new BuscarGuitarra();
             gui.Show();
@@ -52,58 +52,78 @@ namespace GUICliente2
             gui.Show();
         }
 
-        private void agregarFundaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void agregarFunda_Click(object sender, EventArgs e)
         {
             AgregarFunda gui = new AgregarFunda();
             gui.Show();
         }
 
-        private void actualizarFundaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void actualizarFunda_Click(object sender, EventArgs e)
         {
             ActualizarFunda gui = new ActualizarFunda();
             gui.Show();
         }
 
-        private void eliminarFundaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eliminarFunda_Click(object sender, EventArgs e)
         {
             EliminarFunda gui = new EliminarFunda();
             gui.Show();
         }
 
-        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void actualizarGuitarra_Click(object sender, EventArgs e)
         {
             ActualizarGuitarra gui = new ActualizarGuitarra();
             gui.Show();
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eliminarGuitarra_Click(object sender, EventArgs e)
         {
             EliminarGuitarra gui = new EliminarGuitarra();
             gui.Show();
         }
 
-        private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void agregarTeclado_Click(object sender, EventArgs e)
         {
             AgregarTeclado gui = new AgregarTeclado();
             gui.Show();
         }
 
-        private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void buscarTeclado_Click(object sender, EventArgs e)
         {
             BuscarTeclado gui = new BuscarTeclado();
             gui.Show();
         }
 
-        private void actualizartToolStripMenuItem_Click(object sender, EventArgs e)
+        private void actualizartTeclado_Click(object sender, EventArgs e)
         {
             ActualizarTeclado gui = new ActualizarTeclado();
             gui.Show();
         }
 
-        private void eliminarToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void eliminarTeclado_Click(object sender, EventArgs e)
         {
             EliminarTeclado gui = new EliminarTeclado();
             gui.Show();
+        }
+
+        private void guardarPreset_Click(object sender, EventArgs e)
+        {
+            GuardarPreset gui = new GuardarPreset();
+            gui.Show();
+        }
+
+        private void cargarPreset_Click(object sender, EventArgs e)
+        {
+            CargarPreset gui = new CargarPreset();
+            gui.Show();
+        }
+
+        private void acercaDe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Desarrollado por:\nGerman Castellanos\nDavid Orjuela\nJorge Rodriguez",
+                "Información",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
     }
 }

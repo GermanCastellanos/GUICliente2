@@ -23,3 +23,5 @@ C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.Agr
 C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.AgregarFunda.resources
 C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ListarGuitarra.resources
 C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ListarTeclado.resources
+C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.CargarPreset.resources
+C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.GuardarPreset.resources

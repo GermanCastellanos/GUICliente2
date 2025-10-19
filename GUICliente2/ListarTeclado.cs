@@ -16,5 +16,10 @@ namespace GUICliente2
         {
             InitializeComponent();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

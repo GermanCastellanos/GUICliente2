@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{E485A847-32C2-4B5C-8A52-CD7DC5F5A485}|GUICliente2\\GUICliente2.csproj|solutionrelative:guicliente2\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E485A847-32C2-4B5C-8A52-CD7DC5F5A485}|GUICliente2\\GUICliente2.csproj|c:\\users\\gerca\\desktop\\uni\\dae\\guicliente2\\guicliente2\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E485A847-32C2-4B5C-8A52-CD7DC5F5A485}|GUICliente2\\GUICliente2.csproj|C:\\Users\\gerca\\Desktop\\Uni\\DAE\\GUICliente2\\guicliente2\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E485A847-32C2-4B5C-8A52-CD7DC5F5A485}|GUICliente2\\GUICliente2.csproj|solutionrelative:guicliente2\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -41,9 +41,10 @@
               "RelativeDocumentMoniker": "GUICliente2\\Principal.cs",
               "ToolTip": "C:\\Users\\gerca\\Desktop\\Uni\\DAE\\GUICliente2\\GUICliente2\\Principal.cs",
               "RelativeToolTip": "GUICliente2\\Principal.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAqwGoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwH0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T06:22:06.296Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]

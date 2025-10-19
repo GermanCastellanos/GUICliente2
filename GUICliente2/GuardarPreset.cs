@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace GUICliente2
 {
-    public partial class EliminarTeclado : Form
+    public partial class GuardarPreset : Form
     {
-        public EliminarTeclado()
+        public GuardarPreset()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
