@@ -44,6 +44,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textFechaCreacion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -146,7 +148,7 @@
             // textTipo
             // 
             this.textTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTipo.Location = new System.Drawing.Point(228, 232);
+            this.textTipo.Location = new System.Drawing.Point(228, 271);
             this.textTipo.Name = "textTipo";
             this.textTipo.ReadOnly = true;
             this.textTipo.Size = new System.Drawing.Size(231, 27);
@@ -156,7 +158,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 235);
+            this.label6.Location = new System.Drawing.Point(12, 274);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 20);
             this.label6.TabIndex = 10;
@@ -165,7 +167,7 @@
             // textMaterial
             // 
             this.textMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMaterial.Location = new System.Drawing.Point(228, 276);
+            this.textMaterial.Location = new System.Drawing.Point(228, 315);
             this.textMaterial.Name = "textMaterial";
             this.textMaterial.ReadOnly = true;
             this.textMaterial.Size = new System.Drawing.Size(231, 27);
@@ -175,7 +177,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 279);
+            this.label7.Location = new System.Drawing.Point(12, 318);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 20);
             this.label7.TabIndex = 12;
@@ -184,7 +186,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(363, 342);
+            this.btnBuscar.Location = new System.Drawing.Point(363, 411);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(96, 35);
             this.btnBuscar.TabIndex = 17;
@@ -193,7 +195,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 342);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 411);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(96, 35);
             this.btnCerrar.TabIndex = 18;
@@ -201,11 +203,32 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 234);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(147, 20);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Fecha de creación";
+            // 
+            // textFechaCreacion
+            // 
+            this.textFechaCreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textFechaCreacion.Location = new System.Drawing.Point(228, 231);
+            this.textFechaCreacion.Name = "textFechaCreacion";
+            this.textFechaCreacion.ReadOnly = true;
+            this.textFechaCreacion.Size = new System.Drawing.Size(231, 27);
+            this.textFechaCreacion.TabIndex = 21;
+            // 
             // BuscarGuitarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 389);
+            this.ClientSize = new System.Drawing.Size(471, 458);
+            this.Controls.Add(this.textFechaCreacion);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textMaterial);
@@ -248,5 +271,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textFechaCreacion;
     }
 }

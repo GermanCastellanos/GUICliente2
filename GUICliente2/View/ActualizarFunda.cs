@@ -41,5 +41,10 @@ namespace GUICliente2
         {
 
         }
+
+        private void textCFunda_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

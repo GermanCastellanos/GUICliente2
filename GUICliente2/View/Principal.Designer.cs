@@ -122,7 +122,7 @@
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.salirToolStripMenuItem1.Text = "Salir";
             // 
             // instrumentoToolStripMenuItem
@@ -138,7 +138,7 @@
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarInstrumentos_Click);
             // 
@@ -152,7 +152,7 @@
             this.actualizarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.guitarraToolStripMenuItem.Name = "guitarraToolStripMenuItem";
-            this.guitarraToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.guitarraToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.guitarraToolStripMenuItem.Text = "Guitarra";
             // 
             // fundasToolStripMenuItem
@@ -232,55 +232,55 @@
             this.actualizartToolStripMenuItem,
             this.eliminarToolStripMenuItem1});
             this.tecladoToolStripMenuItem.Name = "tecladoToolStripMenuItem";
-            this.tecladoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tecladoToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.tecladoToolStripMenuItem.Text = "Teclado";
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.guardarToolStripMenuItem.Text = "Guardar preset";
             this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarPreset_Click);
             // 
             // cargarPresetToolStripMenuItem
             // 
             this.cargarPresetToolStripMenuItem.Name = "cargarPresetToolStripMenuItem";
-            this.cargarPresetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cargarPresetToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.cargarPresetToolStripMenuItem.Text = "Cargar preset";
             this.cargarPresetToolStripMenuItem.Click += new System.EventHandler(this.cargarPreset_Click);
             // 
             // listarToolStripMenuItem2
             // 
             this.listarToolStripMenuItem2.Name = "listarToolStripMenuItem2";
-            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(190, 26);
             this.listarToolStripMenuItem2.Text = "Listar";
             this.listarToolStripMenuItem2.Click += new System.EventHandler(this.listarTeclado_Click);
             // 
             // agregarToolStripMenuItem1
             // 
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
-            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
             this.agregarToolStripMenuItem1.Text = "Agregar";
             this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarTeclado_Click);
             // 
             // buscarToolStripMenuItem1
             // 
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
             this.buscarToolStripMenuItem1.Text = "Buscar";
             this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarTeclado_Click);
             // 
             // actualizartToolStripMenuItem
             // 
             this.actualizartToolStripMenuItem.Name = "actualizartToolStripMenuItem";
-            this.actualizartToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.actualizartToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.actualizartToolStripMenuItem.Text = "Actualizar";
             this.actualizartToolStripMenuItem.Click += new System.EventHandler(this.actualizartTeclado_Click);
             // 
             // eliminarToolStripMenuItem1
             // 
             this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(190, 26);
             this.eliminarToolStripMenuItem1.Text = "Eliminar";
             this.eliminarToolStripMenuItem1.Click += new System.EventHandler(this.actualizartTeclado_Click);
             // 

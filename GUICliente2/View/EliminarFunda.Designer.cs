@@ -30,11 +30,11 @@
         {
             this.textPrecio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textMarca = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.textNombre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textCGuitarra = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.textCFunda = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -46,6 +46,7 @@
             this.textPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrecio.Location = new System.Drawing.Point(179, 145);
             this.textPrecio.Name = "textPrecio";
+            this.textPrecio.ReadOnly = true;
             this.textPrecio.Size = new System.Drawing.Size(286, 27);
             this.textPrecio.TabIndex = 15;
             // 
@@ -59,13 +60,14 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Precio";
             // 
-            // textMarca
+            // textNombre
             // 
-            this.textMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMarca.Location = new System.Drawing.Point(179, 102);
-            this.textMarca.Name = "textMarca";
-            this.textMarca.Size = new System.Drawing.Size(286, 27);
-            this.textMarca.TabIndex = 13;
+            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNombre.Location = new System.Drawing.Point(179, 102);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.ReadOnly = true;
+            this.textNombre.Size = new System.Drawing.Size(286, 27);
+            this.textNombre.TabIndex = 13;
             // 
             // label3
             // 
@@ -73,17 +75,18 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 20);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Marca";
+            this.label3.Text = "Nombre";
             // 
-            // textNombre
+            // textCGuitarra
             // 
-            this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombre.Location = new System.Drawing.Point(179, 58);
-            this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(286, 27);
-            this.textNombre.TabIndex = 11;
+            this.textCGuitarra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCGuitarra.Location = new System.Drawing.Point(179, 58);
+            this.textCGuitarra.Name = "textCGuitarra";
+            this.textCGuitarra.ReadOnly = true;
+            this.textCGuitarra.Size = new System.Drawing.Size(286, 27);
+            this.textCGuitarra.TabIndex = 11;
             // 
             // label2
             // 
@@ -91,17 +94,17 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.Size = new System.Drawing.Size(127, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Nombre";
+            this.label2.Text = "Código Guitarra";
             // 
-            // textCodigo
+            // textCFunda
             // 
-            this.textCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCodigo.Location = new System.Drawing.Point(179, 16);
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(184, 27);
-            this.textCodigo.TabIndex = 9;
+            this.textCFunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCFunda.Location = new System.Drawing.Point(179, 16);
+            this.textCFunda.Name = "textCFunda";
+            this.textCFunda.Size = new System.Drawing.Size(184, 27);
+            this.textCFunda.TabIndex = 9;
             // 
             // label1
             // 
@@ -109,9 +112,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Código";
+            this.label1.Text = "Código Funda";
             // 
             // btnCerrar
             // 
@@ -151,11 +154,11 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.textPrecio);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textMarca);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textCGuitarra);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textCodigo);
+            this.Controls.Add(this.textCFunda);
             this.Controls.Add(this.label1);
             this.Name = "EliminarFunda";
             this.Text = "Eliminar Funda";
@@ -169,11 +172,11 @@
 
         private System.Windows.Forms.TextBox textPrecio;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textMarca;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textCGuitarra;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textCodigo;
+        private System.Windows.Forms.TextBox textCFunda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnEliminar;

@@ -43,7 +43,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(776, 321);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.btnListar_Click);
             // 
             // button1
             // 
@@ -75,7 +75,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListarInstrumentos";
             this.Text = "Listar Instrumentos";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            //this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

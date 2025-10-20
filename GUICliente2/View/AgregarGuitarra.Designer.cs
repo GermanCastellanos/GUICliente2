@@ -47,6 +47,8 @@
             this.rbtnNo = new System.Windows.Forms.RadioButton();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.dateCreacion = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -144,7 +146,7 @@
             // textTipo
             // 
             this.textTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTipo.Location = new System.Drawing.Point(228, 232);
+            this.textTipo.Location = new System.Drawing.Point(228, 273);
             this.textTipo.Name = "textTipo";
             this.textTipo.Size = new System.Drawing.Size(231, 27);
             this.textTipo.TabIndex = 11;
@@ -153,7 +155,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 235);
+            this.label6.Location = new System.Drawing.Point(12, 276);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 20);
             this.label6.TabIndex = 10;
@@ -162,7 +164,7 @@
             // textMaterial
             // 
             this.textMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMaterial.Location = new System.Drawing.Point(228, 276);
+            this.textMaterial.Location = new System.Drawing.Point(228, 317);
             this.textMaterial.Name = "textMaterial";
             this.textMaterial.Size = new System.Drawing.Size(231, 27);
             this.textMaterial.TabIndex = 13;
@@ -171,7 +173,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 279);
+            this.label7.Location = new System.Drawing.Point(12, 320);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 20);
             this.label7.TabIndex = 12;
@@ -182,7 +184,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 318);
+            this.label8.Location = new System.Drawing.Point(12, 359);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 20);
             this.label8.TabIndex = 14;
@@ -191,7 +193,7 @@
             // rbtnSi
             // 
             this.rbtnSi.AutoSize = true;
-            this.rbtnSi.Location = new System.Drawing.Point(228, 318);
+            this.rbtnSi.Location = new System.Drawing.Point(228, 359);
             this.rbtnSi.Name = "rbtnSi";
             this.rbtnSi.Size = new System.Drawing.Size(40, 20);
             this.rbtnSi.TabIndex = 15;
@@ -202,7 +204,7 @@
             // rbtnNo
             // 
             this.rbtnNo.AutoSize = true;
-            this.rbtnNo.Location = new System.Drawing.Point(413, 318);
+            this.rbtnNo.Location = new System.Drawing.Point(413, 359);
             this.rbtnNo.Name = "rbtnNo";
             this.rbtnNo.Size = new System.Drawing.Size(46, 20);
             this.rbtnNo.TabIndex = 16;
@@ -212,7 +214,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(363, 380);
+            this.btnAgregar.Location = new System.Drawing.Point(363, 413);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(96, 35);
             this.btnAgregar.TabIndex = 17;
@@ -221,7 +223,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 380);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 413);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(96, 35);
             this.btnCerrar.TabIndex = 18;
@@ -229,11 +231,30 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // dateCreacion
+            // 
+            this.dateCreacion.Location = new System.Drawing.Point(228, 237);
+            this.dateCreacion.Name = "dateCreacion";
+            this.dateCreacion.Size = new System.Drawing.Size(231, 22);
+            this.dateCreacion.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 237);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 20);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Fecha de creación";
+            // 
             // AgregarGuitarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 427);
+            this.ClientSize = new System.Drawing.Size(471, 460);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dateCreacion);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.rbtnNo);
@@ -282,5 +303,7 @@
         private System.Windows.Forms.RadioButton rbtnNo;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.DateTimePicker dateCreacion;
+        private System.Windows.Forms.Label label9;
     }
 }

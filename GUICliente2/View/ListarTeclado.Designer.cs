@@ -72,7 +72,7 @@
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ListarTeclado";
-            this.Text = "Form1";
+            this.Text = "Listar Teclado";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -45,11 +45,15 @@
             this.textCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.textDigiAna = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 334);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 428);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(96, 35);
             this.btnCerrar.TabIndex = 37;
@@ -59,7 +63,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(411, 334);
+            this.btnActualizar.Location = new System.Drawing.Point(411, 428);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(96, 35);
             this.btnActualizar.TabIndex = 36;
@@ -69,7 +73,7 @@
             // textMaterial
             // 
             this.textMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMaterial.Location = new System.Drawing.Point(227, 284);
+            this.textMaterial.Location = new System.Drawing.Point(228, 371);
             this.textMaterial.Name = "textMaterial";
             this.textMaterial.Size = new System.Drawing.Size(280, 27);
             this.textMaterial.TabIndex = 32;
@@ -78,7 +82,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 287);
+            this.label7.Location = new System.Drawing.Point(12, 374);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(99, 20);
             this.label7.TabIndex = 31;
@@ -87,7 +91,7 @@
             // textTipo
             // 
             this.textTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTipo.Location = new System.Drawing.Point(227, 240);
+            this.textTipo.Location = new System.Drawing.Point(228, 280);
             this.textTipo.Name = "textTipo";
             this.textTipo.Size = new System.Drawing.Size(280, 27);
             this.textTipo.TabIndex = 30;
@@ -96,7 +100,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 243);
+            this.label6.Location = new System.Drawing.Point(12, 283);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(141, 20);
             this.label6.TabIndex = 29;
@@ -203,11 +207,51 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
+            // textDigiAna
+            // 
+            this.textDigiAna.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDigiAna.Location = new System.Drawing.Point(229, 326);
+            this.textDigiAna.Name = "textDigiAna";
+            this.textDigiAna.Size = new System.Drawing.Size(280, 27);
+            this.textDigiAna.TabIndex = 40;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(13, 329);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(147, 20);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Digital o analógico";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(228, 242);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(279, 22);
+            this.dateTimePicker1.TabIndex = 41;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(13, 242);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 20);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "Fecha de creación";
+            // 
             // ActualizarTeclado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 381);
+            this.ClientSize = new System.Drawing.Size(519, 475);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textDigiAna);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnActualizar);
@@ -251,5 +295,9 @@
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox textDigiAna;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label9;
     }
 }
