@@ -27,7 +27,6 @@ namespace GUICliente2
         public ListarInstrumentos()
         {
             InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterParent;
             _servicio = new ServicioInstrumento(url);
         }
 
@@ -132,6 +131,8 @@ namespace GUICliente2
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = instrumentos;
+            dataGridView1.RowHeadersVisible = false;
+
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AutoResizeColumns();

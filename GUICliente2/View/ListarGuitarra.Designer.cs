@@ -52,6 +52,7 @@
             this.btnListar.TabIndex = 4;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dataGridView1
             // 
