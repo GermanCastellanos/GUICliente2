@@ -25,3 +25,30 @@ C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.Lis
 C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ListarTeclado.resources
 C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.CargarPreset.resources
 C:\Users\gerca\Desktop\Uni\DAE\GUICliente2\GUICliente2\obj\Debug\GUICliente2.GuardarPreset.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\bin\Debug\GUICliente2.exe.config
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\bin\Debug\GUICliente2.exe
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\bin\Debug\GUICliente2.pdb
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.csproj.AssemblyReference.cache
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.exe.config
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.EliminarTeclado.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.EliminarFunda.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.EliminarGuitarra.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ActualizarGuitarra.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ActualizarTeclado.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ActualizarFunda.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.BuscarTeclado.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.BuscarGuitarra.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.AgregarGuitarra.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.AgregarTeclado.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.AgregarFunda.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.CargarPreset.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.GuardarPreset.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ListarGuitarra.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ListarTeclado.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.Principal.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.ListarInstrumentos.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.Properties.Resources.resources
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.csproj.GenerateResource.cache
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.csproj.CoreCompileInputs.cache
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.exe
+C:\Users\jorge\Documents\Universidad\2025B\Empresariales\Cliente\Cliente C#\GUICliente2\GUICliente2\obj\Debug\GUICliente2.pdb

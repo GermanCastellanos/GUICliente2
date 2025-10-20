@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GUICliente2.Model
+{
+    public class Guitarra : Instrumento
+    {
+        public string Tipo { get; set; }               // acústica, eléctrica, etc.
+        public string MaterialCuerpo { get; set; }
+        public List<Funda> Fundas { get; set; } = new List<Funda>();
+    }
+
+    public class Funda
+    {
+        public string Codigo { get; set; }
+        public string Material { get; set; }
+        public string Color { get; set; }
+        public double Precio { get; set; }
+    }
+}
