@@ -87,7 +87,7 @@ namespace GUICliente2.Service
         // Agregar nuevo instrumento
         public async Task<bool> AgregarInstrumento(Instrumento instrumento)
         {
-            var json = JsonSerializer.Serialize(instrumento);
+            var json = JsonSerializer.Serialize(instrumento, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PostAsync(Endpoint, content);
@@ -99,7 +99,7 @@ namespace GUICliente2.Service
         // Editar instrumento existente
         public async Task<bool> EditarInstrumento(string codigo, Instrumento instrumento)
         {
-            var json = JsonSerializer.Serialize(instrumento);
+            var json = JsonSerializer.Serialize(instrumento, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PutAsync($"{Endpoint}/{codigo}", content);
@@ -119,7 +119,7 @@ namespace GUICliente2.Service
         // Agregar fundas a una guitarra
         public async Task<bool> AgregarFundas(string codigo, List<Funda> fundas)
         {
-            var json = JsonSerializer.Serialize(fundas);
+            var json = JsonSerializer.Serialize(fundas, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PostAsync($"{Endpoint}/guitarras/{codigo}/fundas", content);
@@ -131,7 +131,10 @@ namespace GUICliente2.Service
         // Editar una funda
         public async Task<bool> EditarFunda(string codigo, string codigoFunda, Funda funda)
         {
-            var json = JsonSerializer.Serialize(funda);
+            var json = JsonSerializer.Serialize(funda, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PutAsync($"{Endpoint}/guitarras/{codigo}/fundas/{codigoFunda}", content);
@@ -152,7 +155,10 @@ namespace GUICliente2.Service
         // Filtrar instrumentos
         public async Task<List<Instrumento>> FiltrarInstrumentos(FiltroInstrumentoDTO filtro)
         {
-            var json = JsonSerializer.Serialize(filtro);
+            var json = JsonSerializer.Serialize(filtro, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await _httpClient.PostAsync($"{Endpoint}/filtrar", content);

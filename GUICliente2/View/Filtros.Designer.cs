@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.cbNombre = new System.Windows.Forms.CheckBox();
+            this.cbMarca = new System.Windows.Forms.CheckBox();
+            this.cbPrecioMin = new System.Windows.Forms.CheckBox();
+            this.cbPrecioMax = new System.Windows.Forms.CheckBox();
+            this.cbStockMin = new System.Windows.Forms.CheckBox();
+            this.cbStockMax = new System.Windows.Forms.CheckBox();
             this.btnFiltros = new System.Windows.Forms.Button();
             this.textNombre = new System.Windows.Forms.TextBox();
             this.textMarca = new System.Windows.Forms.TextBox();
@@ -47,71 +47,77 @@
             ((System.ComponentModel.ISupportInitialize)(this.numStockMax)).BeginInit();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // cbNombre
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(13, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(90, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Nombre";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbNombre.AutoSize = true;
+            this.cbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNombre.Location = new System.Drawing.Point(13, 26);
+            this.cbNombre.Name = "cbNombre";
+            this.cbNombre.Size = new System.Drawing.Size(90, 24);
+            this.cbNombre.TabIndex = 0;
+            this.cbNombre.Text = "Nombre";
+            this.cbNombre.UseVisualStyleBackColor = true;
+            this.cbNombre.CheckedChanged += new System.EventHandler(this.cbNombre_CheckedChanged);
             // 
-            // checkBox2
+            // cbMarca
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(13, 66);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(78, 24);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Marca";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbMarca.AutoSize = true;
+            this.cbMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMarca.Location = new System.Drawing.Point(13, 66);
+            this.cbMarca.Name = "cbMarca";
+            this.cbMarca.Size = new System.Drawing.Size(78, 24);
+            this.cbMarca.TabIndex = 1;
+            this.cbMarca.Text = "Marca";
+            this.cbMarca.UseVisualStyleBackColor = true;
+            this.cbMarca.CheckedChanged += new System.EventHandler(this.cbMarca_CheckedChanged);
             // 
-            // checkBox3
+            // cbPrecioMin
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(13, 106);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(111, 24);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Precio min";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbPrecioMin.AutoSize = true;
+            this.cbPrecioMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPrecioMin.Location = new System.Drawing.Point(13, 106);
+            this.cbPrecioMin.Name = "cbPrecioMin";
+            this.cbPrecioMin.Size = new System.Drawing.Size(111, 24);
+            this.cbPrecioMin.TabIndex = 2;
+            this.cbPrecioMin.Text = "Precio min";
+            this.cbPrecioMin.UseVisualStyleBackColor = true;
+            this.cbPrecioMin.CheckedChanged += new System.EventHandler(this.cbPrecioMin_CheckedChanged);
             // 
-            // checkBox4
+            // cbPrecioMax
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(13, 147);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(115, 24);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Precio max";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbPrecioMax.AutoSize = true;
+            this.cbPrecioMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPrecioMax.Location = new System.Drawing.Point(13, 147);
+            this.cbPrecioMax.Name = "cbPrecioMax";
+            this.cbPrecioMax.Size = new System.Drawing.Size(115, 24);
+            this.cbPrecioMax.TabIndex = 3;
+            this.cbPrecioMax.Text = "Precio max";
+            this.cbPrecioMax.UseVisualStyleBackColor = true;
+            this.cbPrecioMax.CheckedChanged += new System.EventHandler(this.cbPrecioMax_CheckedChanged);
             // 
-            // checkBox5
+            // cbStockMin
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(13, 187);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(105, 24);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Stock min";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbStockMin.AutoSize = true;
+            this.cbStockMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStockMin.Location = new System.Drawing.Point(13, 187);
+            this.cbStockMin.Name = "cbStockMin";
+            this.cbStockMin.Size = new System.Drawing.Size(105, 24);
+            this.cbStockMin.TabIndex = 4;
+            this.cbStockMin.Text = "Stock min";
+            this.cbStockMin.UseVisualStyleBackColor = true;
+            this.cbStockMin.CheckedChanged += new System.EventHandler(this.cbStockMin_CheckedChanged);
             // 
-            // checkBox6
+            // cbStockMax
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(13, 226);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(109, 24);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Stock max";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbStockMax.AutoSize = true;
+            this.cbStockMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStockMax.Location = new System.Drawing.Point(13, 226);
+            this.cbStockMax.Name = "cbStockMax";
+            this.cbStockMax.Size = new System.Drawing.Size(109, 24);
+            this.cbStockMax.TabIndex = 5;
+            this.cbStockMax.Text = "Stock max";
+            this.cbStockMax.UseVisualStyleBackColor = true;
+            this.cbStockMax.CheckedChanged += new System.EventHandler(this.cbStockMax_CheckedChanged);
             // 
             // btnFiltros
             // 
@@ -121,9 +127,11 @@
             this.btnFiltros.TabIndex = 6;
             this.btnFiltros.Text = "Aplicar filtros";
             this.btnFiltros.UseVisualStyleBackColor = true;
+            this.btnFiltros.Click += new System.EventHandler(this.btnFiltros_Click);
             // 
             // textNombre
             // 
+            this.textNombre.Enabled = false;
             this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNombre.Location = new System.Drawing.Point(164, 23);
             this.textNombre.Name = "textNombre";
@@ -132,6 +140,7 @@
             // 
             // textMarca
             // 
+            this.textMarca.Enabled = false;
             this.textMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textMarca.Location = new System.Drawing.Point(164, 63);
             this.textMarca.Name = "textMarca";
@@ -140,6 +149,7 @@
             // 
             // numPrecioMin
             // 
+            this.numPrecioMin.Enabled = false;
             this.numPrecioMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPrecioMin.Location = new System.Drawing.Point(164, 103);
             this.numPrecioMin.Name = "numPrecioMin";
@@ -148,6 +158,7 @@
             // 
             // numPrecioMax
             // 
+            this.numPrecioMax.Enabled = false;
             this.numPrecioMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPrecioMax.Location = new System.Drawing.Point(164, 144);
             this.numPrecioMax.Name = "numPrecioMax";
@@ -156,6 +167,7 @@
             // 
             // numStockMin
             // 
+            this.numStockMin.Enabled = false;
             this.numStockMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numStockMin.Location = new System.Drawing.Point(164, 184);
             this.numStockMin.Name = "numStockMin";
@@ -164,6 +176,7 @@
             // 
             // numStockMax
             // 
+            this.numStockMax.Enabled = false;
             this.numStockMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numStockMax.Location = new System.Drawing.Point(164, 223);
             this.numStockMax.Name = "numStockMax";
@@ -182,12 +195,12 @@
             this.Controls.Add(this.textMarca);
             this.Controls.Add(this.textNombre);
             this.Controls.Add(this.btnFiltros);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbStockMax);
+            this.Controls.Add(this.cbStockMin);
+            this.Controls.Add(this.cbPrecioMax);
+            this.Controls.Add(this.cbPrecioMin);
+            this.Controls.Add(this.cbMarca);
+            this.Controls.Add(this.cbNombre);
             this.Name = "Filtros";
             this.Text = "Filtros";
             ((System.ComponentModel.ISupportInitialize)(this.numPrecioMin)).EndInit();
@@ -201,12 +214,12 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox cbNombre;
+        private System.Windows.Forms.CheckBox cbMarca;
+        private System.Windows.Forms.CheckBox cbPrecioMin;
+        private System.Windows.Forms.CheckBox cbPrecioMax;
+        private System.Windows.Forms.CheckBox cbStockMin;
+        private System.Windows.Forms.CheckBox cbStockMax;
         private System.Windows.Forms.Button btnFiltros;
         private System.Windows.Forms.TextBox textNombre;
         private System.Windows.Forms.TextBox textMarca;
