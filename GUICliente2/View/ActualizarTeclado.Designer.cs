@@ -47,8 +47,8 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.textDigiAna = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
+            this.textCreacion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -225,14 +225,6 @@
             this.label8.TabIndex = 39;
             this.label8.Text = "Digital o analógico";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(228, 242);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(279, 22);
-            this.dateTimePicker1.TabIndex = 41;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -243,13 +235,22 @@
             this.label9.TabIndex = 42;
             this.label9.Text = "Fecha de creación";
             // 
+            // textCreacion
+            // 
+            this.textCreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCreacion.Location = new System.Drawing.Point(227, 239);
+            this.textCreacion.Name = "textCreacion";
+            this.textCreacion.ReadOnly = true;
+            this.textCreacion.Size = new System.Drawing.Size(280, 27);
+            this.textCreacion.TabIndex = 43;
+            // 
             // ActualizarTeclado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 475);
+            this.Controls.Add(this.textCreacion);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textDigiAna);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnBuscar);
@@ -297,7 +298,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox textDigiAna;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textCreacion;
     }
 }

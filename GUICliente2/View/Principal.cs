@@ -125,5 +125,15 @@ namespace GUICliente2
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
+
+        private void instrumentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

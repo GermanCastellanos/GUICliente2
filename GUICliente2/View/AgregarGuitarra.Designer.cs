@@ -38,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textTipo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textMaterial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.dateCreacion = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -142,14 +142,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Stock";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // textTipo
-            // 
-            this.textTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textTipo.Location = new System.Drawing.Point(228, 273);
-            this.textTipo.Name = "textTipo";
-            this.textTipo.Size = new System.Drawing.Size(231, 27);
-            this.textTipo.TabIndex = 11;
             // 
             // label6
             // 
@@ -248,11 +240,26 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Fecha de creación";
             // 
+            // comboBoxTipo
+            // 
+            this.comboBoxTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
+            "Eléctrica",
+            "Acústica",
+            "Electroacústica",
+            "Clásica"});
+            this.comboBoxTipo.Location = new System.Drawing.Point(228, 276);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(231, 28);
+            this.comboBoxTipo.TabIndex = 21;
+            // 
             // AgregarGuitarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 460);
+            this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateCreacion);
             this.Controls.Add(this.btnCerrar);
@@ -262,7 +269,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textMaterial);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textTipo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textStock);
             this.Controls.Add(this.label5);
@@ -294,7 +300,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textStock;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textTipo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textMaterial;
         private System.Windows.Forms.Label label7;
@@ -305,5 +310,6 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.DateTimePicker dateCreacion;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBoxTipo;
     }
 }

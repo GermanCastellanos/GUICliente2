@@ -33,7 +33,6 @@
             this.rbtnAna = new System.Windows.Forms.RadioButton();
             this.rbtnDigi = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.textMaterial = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textTipo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dateCreacion = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -101,14 +101,6 @@
             this.label8.Size = new System.Drawing.Size(147, 20);
             this.label8.TabIndex = 33;
             this.label8.Text = "Digital o analogico";
-            // 
-            // textMaterial
-            // 
-            this.textMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMaterial.Location = new System.Drawing.Point(227, 320);
-            this.textMaterial.Name = "textMaterial";
-            this.textMaterial.Size = new System.Drawing.Size(265, 27);
-            this.textMaterial.TabIndex = 32;
             // 
             // label7
             // 
@@ -246,11 +238,27 @@
             this.dateCreacion.Size = new System.Drawing.Size(265, 22);
             this.dateCreacion.TabIndex = 39;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Ninguna",
+            "Básica",
+            "Media",
+            "Alta",
+            "Profesional"});
+            this.comboBox1.Location = new System.Drawing.Point(227, 323);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(265, 28);
+            this.comboBox1.TabIndex = 40;
+            // 
             // AgregarTeclado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 476);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateCreacion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCerrar);
@@ -258,7 +266,6 @@
             this.Controls.Add(this.rbtnAna);
             this.Controls.Add(this.rbtnDigi);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textMaterial);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textTipo);
             this.Controls.Add(this.label6);
@@ -273,7 +280,7 @@
             this.Controls.Add(this.textCodigo);
             this.Controls.Add(this.label1);
             this.Name = "AgregarTeclado";
-            this.Text = "Form1";
+            this.Text = "Agregar Teclado";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,7 +293,6 @@
         private System.Windows.Forms.RadioButton rbtnAna;
         private System.Windows.Forms.RadioButton rbtnDigi;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textMaterial;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textTipo;
         private System.Windows.Forms.Label label6;
@@ -302,5 +308,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateCreacion;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

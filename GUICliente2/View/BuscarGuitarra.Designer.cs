@@ -46,6 +46,8 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textFechaCreacion = new System.Windows.Forms.TextBox();
+            this.textFunda = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -222,11 +224,32 @@
             this.textFechaCreacion.Size = new System.Drawing.Size(231, 27);
             this.textFechaCreacion.TabIndex = 21;
             // 
+            // textFunda
+            // 
+            this.textFunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textFunda.Location = new System.Drawing.Point(228, 359);
+            this.textFunda.Name = "textFunda";
+            this.textFunda.ReadOnly = true;
+            this.textFunda.Size = new System.Drawing.Size(231, 27);
+            this.textFunda.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 362);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 20);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Funda";
+            // 
             // BuscarGuitarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 458);
+            this.Controls.Add(this.textFunda);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.textFechaCreacion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCerrar);
@@ -273,5 +296,7 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textFechaCreacion;
+        private System.Windows.Forms.TextBox textFunda;
+        private System.Windows.Forms.Label label9;
     }
 }

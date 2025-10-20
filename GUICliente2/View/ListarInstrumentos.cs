@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GUICliente2.Service;
 using GUICliente2.Model;
+using GUICliente2.View;
 
 
 namespace GUICliente2
@@ -58,6 +59,12 @@ namespace GUICliente2
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void btnFiltros_Click(object sender, EventArgs e)
+        {
+            Filtros gui = new();
+            gui.Show();
         }
     }
 }

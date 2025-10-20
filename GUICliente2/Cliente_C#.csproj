@@ -172,6 +172,12 @@
     <Compile Include="View\CargarPreset.Designer.cs">
       <DependentUpon>CargarPreset.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Filtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Filtros.Designer.cs">
+      <DependentUpon>Filtros.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\GuardarPreset.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\CargarPreset.resx">
       <DependentUpon>CargarPreset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Filtros.resx">
+      <DependentUpon>Filtros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\GuardarPreset.resx">
       <DependentUpon>GuardarPreset.cs</DependentUpon>

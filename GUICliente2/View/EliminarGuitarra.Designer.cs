@@ -47,6 +47,8 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.textFechaCreacion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.textFunda = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -186,7 +188,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(387, 384);
+            this.btnEliminar.Location = new System.Drawing.Point(387, 419);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(96, 35);
             this.btnEliminar.TabIndex = 17;
@@ -195,7 +197,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 384);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 419);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(96, 35);
             this.btnCerrar.TabIndex = 18;
@@ -231,11 +233,32 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Fecha de creación";
             // 
+            // textFunda
+            // 
+            this.textFunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textFunda.Location = new System.Drawing.Point(211, 370);
+            this.textFunda.Name = "textFunda";
+            this.textFunda.ReadOnly = true;
+            this.textFunda.Size = new System.Drawing.Size(268, 27);
+            this.textFunda.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 373);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 20);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Funda";
+            // 
             // EliminarGuitarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 431);
+            this.ClientSize = new System.Drawing.Size(495, 466);
+            this.Controls.Add(this.textFunda);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.textFechaCreacion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnBuscar);
@@ -284,5 +307,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox textFechaCreacion;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textFunda;
+        private System.Windows.Forms.Label label9;
     }
 }
