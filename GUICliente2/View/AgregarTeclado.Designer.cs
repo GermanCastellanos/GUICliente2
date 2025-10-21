@@ -69,6 +69,7 @@
             this.btnAgregar.TabIndex = 36;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // rbtnAna
             // 
@@ -129,7 +130,6 @@
             this.label6.Size = new System.Drawing.Size(141, 20);
             this.label6.TabIndex = 29;
             this.label6.Text = "Número de teclas";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textStock
             // 
@@ -243,6 +243,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+          
             "Ninguna",
             "Básica",
             "Media",

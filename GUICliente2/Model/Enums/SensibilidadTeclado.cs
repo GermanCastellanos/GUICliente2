@@ -8,8 +8,11 @@ namespace GUICliente2.Model.Enums
 {
     public enum SensibilidadTeclado
     {
+        Ninguna,
+        Básica,
+        Intermedia,
         Alta,
-        Media,
-        Baja
+        Profesional
     }
+
 }

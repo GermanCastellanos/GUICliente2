@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(61, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textCodigo
             // 
@@ -141,7 +140,6 @@
             this.label5.Size = new System.Drawing.Size(51, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Stock";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -170,7 +168,6 @@
             this.label7.Size = new System.Drawing.Size(152, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "Material del cuerpo";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -192,6 +189,7 @@
             this.rbtnSi.TabStop = true;
             this.rbtnSi.Text = "Sí";
             this.rbtnSi.UseVisualStyleBackColor = true;
+            this.rbtnSi.CheckedChanged += new System.EventHandler(this.rbtnSi_CheckedChanged);
             // 
             // rbtnNo
             // 
@@ -203,6 +201,7 @@
             this.rbtnNo.TabStop = true;
             this.rbtnNo.Text = "No";
             this.rbtnNo.UseVisualStyleBackColor = true;
+            this.rbtnNo.CheckedChanged += new System.EventHandler(this.rbtnNo_CheckedChanged);
             // 
             // btnAgregar
             // 
@@ -212,6 +211,7 @@
             this.btnAgregar.TabIndex = 17;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCerrar
             // 
@@ -282,7 +282,6 @@
             this.Controls.Add(this.label1);
             this.Name = "AgregarGuitarra";
             this.Text = "Agregar Guitarra";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

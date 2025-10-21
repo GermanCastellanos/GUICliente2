@@ -8,6 +8,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GUICliente2.Service
 {
@@ -85,7 +86,7 @@ namespace GUICliente2.Service
         }
 
         // Agregar nuevo instrumento
-        public async Task<bool> AgregarInstrumento(Instrumento instrumento)
+        public async Task<bool> AgregarInstrumento(object instrumento)
         {
             var json = JsonSerializer.Serialize(instrumento, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -97,7 +98,7 @@ namespace GUICliente2.Service
         }
 
         // Editar instrumento existente
-        public async Task<bool> EditarInstrumento(string codigo, Instrumento instrumento)
+        public async Task<bool> EditarInstrumento(string codigo, object instrumento)
         {
             var json = JsonSerializer.Serialize(instrumento, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             var content = new StringContent(json, Encoding.UTF8, "application/json");
