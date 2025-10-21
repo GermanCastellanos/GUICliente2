@@ -54,20 +54,29 @@ namespace GUICliente2
 
         private void agregarFunda_Click(object sender, EventArgs e)
         {
-            AgregarFunda gui = new AgregarFunda();
-            gui.Show();
+            MessageBox.Show(
+                "La función solicitada aún no está implementada. Por favor, intente nuevamente más tarde.",
+                "Función no implementada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void actualizarFunda_Click(object sender, EventArgs e)
         {
-            ActualizarFunda gui = new ActualizarFunda();
-            gui.Show();
+            MessageBox.Show(
+                "La función solicitada aún no está implementada. Por favor, intente nuevamente más tarde.",
+                "Función no implementada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void eliminarFunda_Click(object sender, EventArgs e)
         {
-            EliminarFunda gui = new EliminarFunda();
-            gui.Show();
+            MessageBox.Show(
+                "La función solicitada aún no está implementada. Por favor, intente nuevamente más tarde.",
+                "Función no implementada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void actualizarGuitarra_Click(object sender, EventArgs e)
@@ -108,14 +117,20 @@ namespace GUICliente2
 
         private void guardarPreset_Click(object sender, EventArgs e)
         {
-            GuardarPreset gui = new GuardarPreset();
-            gui.Show();
+            MessageBox.Show(
+                "La función solicitada aún no está implementada. Por favor, intente nuevamente más tarde.",
+                "Función no implementada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void cargarPreset_Click(object sender, EventArgs e)
         {
-            CargarPreset gui = new CargarPreset();
-            gui.Show();
+            MessageBox.Show(
+                "La función solicitada aún no está implementada. Por favor, intente nuevamente más tarde.",
+                "Función no implementada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
 
         private void acercaDe_Click(object sender, EventArgs e)

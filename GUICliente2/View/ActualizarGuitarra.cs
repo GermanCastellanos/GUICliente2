@@ -130,7 +130,7 @@ namespace GUICliente2
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrió un error al actualizar el teclado:\n{ex.Message}",
+                MessageBox.Show($"Ocurrió un error al actualizar la guitarra:\n{ex.Message}",
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

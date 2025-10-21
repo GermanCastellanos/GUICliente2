@@ -69,6 +69,7 @@
             this.btnEliminar.TabIndex = 36;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // textCodigo
             // 
@@ -96,6 +97,7 @@
             this.btnBuscar.TabIndex = 38;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // textCreacion
             // 
