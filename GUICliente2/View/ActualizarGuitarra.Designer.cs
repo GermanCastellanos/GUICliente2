@@ -58,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(61, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textCodigo
             // 
@@ -139,7 +138,6 @@
             this.label5.Size = new System.Drawing.Size(51, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Stock";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -168,7 +166,6 @@
             this.label7.Size = new System.Drawing.Size(152, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "Material del cuerpo";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // btnActualizar
             // 
@@ -178,6 +175,7 @@
             this.btnActualizar.TabIndex = 17;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnCerrar
             // 
@@ -197,6 +195,7 @@
             this.btnBuscar.TabIndex = 19;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label9
             // 
@@ -251,7 +250,6 @@
             this.Controls.Add(this.label1);
             this.Name = "ActualizarGuitarra";
             this.Text = "Actualizar Guitarra";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

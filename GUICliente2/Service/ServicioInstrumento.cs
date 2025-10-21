@@ -73,7 +73,7 @@ namespace GUICliente2.Service
         }
 
         // Buscar por código
-        public async Task<Instrumento> BuscarInstrumento(string codigo)
+        public async Task<Instrumento?> BuscarInstrumento(string codigo)
         {
             var response = await _httpClient.GetAsync($"{Endpoint}/{codigo}");
 
@@ -81,9 +81,26 @@ namespace GUICliente2.Service
                 return null;
 
             response.EnsureSuccessStatusCode();
+
             var json = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<Instrumento>(json, Options);
+
+            // Analizamos el JSON para saber qué tipo de instrumento es
+            using var doc = JsonDocument.Parse(json);
+            var root = doc.RootElement;
+
+            if (!root.TryGetProperty("type", out var typeElement))
+                return JsonSerializer.Deserialize<Instrumento>(json, Options);
+
+            string? type = typeElement.GetString()?.ToLower();
+
+            return type switch
+            {
+                "teclado" => JsonSerializer.Deserialize<Teclado>(json, Options),
+                "guitarra" => JsonSerializer.Deserialize<Guitarra>(json, Options),
+                _ => JsonSerializer.Deserialize<Instrumento>(json, Options)
+            };
         }
+
 
         // Agregar nuevo instrumento
         public async Task<bool> AgregarInstrumento(object instrumento)

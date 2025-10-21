@@ -86,27 +86,27 @@ namespace GUICliente2
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo agregar el teclado.",
+                    MessageBox.Show("No se pudo agregar la guitarra.",
                                     "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (HttpRequestException httpEx)
             {
+                if (httpEx.Message.Contains("409"))
+                {
+                    MessageBox.Show("Ya existe un instrumento con ese código.",
+                                    "Código duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 MessageBox.Show($"Error de conexión con el servidor:\n{httpEx.Message}",
                                 "Error de red", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                if (ex.Message.Contains("409"))
-                {
-                    MessageBox.Show("Ya existe un instrumento con ese código.",
-                                    "Código duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    MessageBox.Show($"Error al agregar el teclado:\n{ex.Message}",
+           
+                    MessageBox.Show($"Error al agregar la guitarra:\n{ex.Message}",
                                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                
             }
         }
 
@@ -159,7 +159,5 @@ namespace GUICliente2
             rbtnSi.Checked = false;
             rbtnNo.Checked = false;
         }
-
-      
     }
 }

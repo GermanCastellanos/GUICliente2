@@ -69,6 +69,7 @@
             this.btnActualizar.TabIndex = 36;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // textMaterial
             // 
@@ -105,7 +106,6 @@
             this.label6.Size = new System.Drawing.Size(141, 20);
             this.label6.TabIndex = 29;
             this.label6.Text = "Número de teclas";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textStock
             // 
@@ -186,7 +186,6 @@
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(178, 27);
             this.textCodigo.TabIndex = 20;
-            this.textCodigo.TextChanged += new System.EventHandler(this.textCodigo_TextChanged);
             // 
             // label1
             // 
@@ -206,6 +205,7 @@
             this.btnBuscar.TabIndex = 38;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // textDigiAna
             // 
