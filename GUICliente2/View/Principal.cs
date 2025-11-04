@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUICliente2.View;
 
 namespace GUICliente2
 {
@@ -132,11 +133,8 @@ namespace GUICliente2
 
         private void buscarFunda_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "La función solicitada aún no está implementada. Por favor, intente nuevamente más tarde.",
-                "Función no implementada",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            BuscarFunda gui = new();
+            gui.Show();
         }
 
         private void actualizarFunda_Click(object sender, EventArgs e)
@@ -148,6 +146,12 @@ namespace GUICliente2
         private void eliminarFunda_Click(object sender, EventArgs e)
         {
             EliminarFunda gui = new();
+            gui.Show();
+        }
+
+        private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ListarFunda gui = new();
             gui.Show();
         }
     }
