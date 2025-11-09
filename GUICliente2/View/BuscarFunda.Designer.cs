@@ -83,7 +83,6 @@
             this.textCFunda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textCFunda.Location = new System.Drawing.Point(234, 58);
             this.textCFunda.Name = "textCFunda";
-            this.textCFunda.ReadOnly = true;
             this.textCFunda.Size = new System.Drawing.Size(231, 27);
             this.textCFunda.TabIndex = 11;
             // 

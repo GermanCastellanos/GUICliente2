@@ -31,6 +31,7 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnFiltros = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,11 +65,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 321);
             this.dataGridView1.TabIndex = 3;
             // 
+            // btnFiltros
+            // 
+            this.btnFiltros.Location = new System.Drawing.Point(350, 360);
+            this.btnFiltros.Name = "btnFiltros";
+            this.btnFiltros.Size = new System.Drawing.Size(110, 37);
+            this.btnFiltros.TabIndex = 6;
+            this.btnFiltros.Text = "Filtros";
+            this.btnFiltros.UseVisualStyleBackColor = true;
+            this.btnFiltros.Click += new System.EventHandler(this.btnFiltros_Click);
+            // 
             // ListarGuitarra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFiltros);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dataGridView1);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnFiltros;
     }
 }
