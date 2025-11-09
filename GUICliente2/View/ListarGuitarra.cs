@@ -1,7 +1,4 @@
-﻿using GUICliente2.Model;
-using GUICliente2.Service;
-using GUICliente2.View;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +9,10 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUICliente2.Model;
+using GUICliente2.Service;
+using GUICliente2.Service.ClienteInstrumentos.Models;
+using GUICliente2.View;
 
 namespace GUICliente2
 {
@@ -19,15 +20,11 @@ namespace GUICliente2
     {
         private readonly ServicioInstrumento _servicio;
         private string url = "http://localhost:8090/";
+        private Filtros ventanaFiltros;
         public ListarGuitarra()
         {
             InitializeComponent();
             _servicio = new ServicioInstrumento(url);
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Dispose();
         }
 
         private async void btnListar_Click(object sender, EventArgs e)
@@ -100,8 +97,65 @@ namespace GUICliente2
 
         private void btnFiltros_Click(object sender, EventArgs e)
         {
-            Filtros gui = new();
-            gui.ShowDialog();
+            if (ventanaFiltros == null || ventanaFiltros.IsDisposed)
+            {
+                ventanaFiltros = new Filtros();
+                ventanaFiltros.OnFiltrosAplicados += async filtro => await AplicarFiltrosAsync(filtro);
+                ventanaFiltros.FormClosed += (s, args) => ventanaFiltros = null;
+                ventanaFiltros.StartPosition = FormStartPosition.CenterParent;
+                ventanaFiltros.Show(this);
+            }
+            else
+            {
+                if (ventanaFiltros.WindowState == FormWindowState.Minimized)
+                    ventanaFiltros.WindowState = FormWindowState.Normal;
+                ventanaFiltros.BringToFront();
+                ventanaFiltros.Focus();
+            }
+        }
+
+        private async Task AplicarFiltrosAsync(FiltroInstrumentoDTO filtro)
+        {
+            btnListar.Enabled = false;
+            try
+            {
+                var guitarras = await _servicio.ListarGuitarras();
+
+                // Filtrado local
+                var guitFiltradas = guitarras.AsQueryable();
+                if (!string.IsNullOrEmpty(filtro.Codigo))
+                    guitFiltradas = guitFiltradas.Where(g => g.Codigo.Contains(filtro.Codigo));
+                if (!string.IsNullOrEmpty(filtro.Nombre))
+                    guitFiltradas = guitFiltradas.Where(g => g.Nombre.Contains(filtro.Nombre));
+                if (!string.IsNullOrEmpty(filtro.Marca))
+                    guitFiltradas = guitFiltradas.Where(g => g.Marca.Contains(filtro.Marca));
+                if (filtro.PrecioMin.HasValue)
+                    guitFiltradas = guitFiltradas.Where(g => g.PrecioBase >= filtro.PrecioMin.Value);
+                if (filtro.PrecioMax.HasValue)
+                    guitFiltradas = guitFiltradas.Where(g => g.PrecioBase <= filtro.PrecioMax.Value);
+                // Otros filtros según tus propiedades
+
+                var filtrarLista = guitFiltradas.ToList();
+
+                if (filtrarLista.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron guitarras con esos filtros.", "Sin resultados",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                ConfigurarDataGridView(filtrarLista);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al aplicar filtros: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnListar.Enabled = true;
+            }
+        }
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }
