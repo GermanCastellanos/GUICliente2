@@ -47,7 +47,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(678, 401);
+            this.btnListar.Location = new System.Drawing.Point(990, 401);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(110, 37);
             this.btnListar.TabIndex = 4;
@@ -62,12 +62,12 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 321);
+            this.dataGridView1.Size = new System.Drawing.Size(1088, 321);
             this.dataGridView1.TabIndex = 3;
             // 
             // btnFiltros
             // 
-            this.btnFiltros.Location = new System.Drawing.Point(350, 360);
+            this.btnFiltros.Location = new System.Drawing.Point(516, 349);
             this.btnFiltros.Name = "btnFiltros";
             this.btnFiltros.Size = new System.Drawing.Size(110, 37);
             this.btnFiltros.TabIndex = 6;
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1112, 450);
             this.Controls.Add(this.btnFiltros);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnListar);

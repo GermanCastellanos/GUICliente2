@@ -15,7 +15,7 @@ namespace GUICliente2
     {
         private readonly ServicioInstrumento servicio;
         private string url = "http://localhost:8090";
-        private Filtros ventanaFiltros;
+        private FiltrosFunda ventanaFiltros;
 
         public ListarFunda()
         {
@@ -69,6 +69,7 @@ namespace GUICliente2
             var datos = fundas.Select(f => new
             {
                 Codigo = f.Codigo,
+                Codigo_guitarra = f.Codigo_Guitarra,
                 Nombre = f.Nombre,
                 Precio = f.Precio
             }).ToList();
@@ -87,7 +88,7 @@ namespace GUICliente2
         {
             if (ventanaFiltros == null || ventanaFiltros.IsDisposed)
             {
-                ventanaFiltros = new Filtros();
+                ventanaFiltros = new FiltrosFunda();
                 ventanaFiltros.OnFiltrosAplicados += async filtro => await AplicarFiltrosAsync(filtro);
                 ventanaFiltros.FormClosed += (s, args) => ventanaFiltros = null;
                 ventanaFiltros.StartPosition = FormStartPosition.CenterParent;
@@ -102,48 +103,27 @@ namespace GUICliente2
             }
         }
 
-        private async Task AplicarFiltrosAsync(FiltroInstrumentoDTO filtro)
+        private async Task AplicarFiltrosAsync(FiltroFundaDTO filtro)
         {
             btnListar.Enabled = false;
             try
             {
-                
-                var instrumentos = await servicio.ListarInstrumentos();
-                var guitarras = instrumentos.OfType<Guitarra>().ToList();
+                var fundasFiltradas = await servicio.FiltrarFundas(filtro);
 
-                if (guitarras == null)
+                if (fundasFiltradas == null || fundasFiltradas.Count == 0)
                 {
-                    MessageBox.Show("No se encontraron guitarras.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No se encontraron fundas con esos filtros.", "Sin resultados",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dataGridView1.DataSource = null;
                     return;
-                }
-
-                var fundas = guitarras.SelectMany(g => g.Fundas).AsQueryable();
-
-                if (!string.IsNullOrEmpty(filtro.Codigo))
-                    fundas = fundas.Where(f => f.Codigo.Contains(filtro.Codigo));
-
-                if (!string.IsNullOrEmpty(filtro.Nombre))
-                    fundas = fundas.Where(f => f.Nombre.Contains(filtro.Nombre));
-
-                if (filtro.PrecioMin.HasValue)
-                    fundas = fundas.Where(f => f.Precio >= filtro.PrecioMin.Value);
-
-                if (filtro.PrecioMax.HasValue)
-                    fundas = fundas.Where(f => f.Precio <= filtro.PrecioMax.Value);
-
-                var fundasFiltradas = fundas.ToList();
-
-                if (fundasFiltradas.Count == 0)
-                {
-                    MessageBox.Show("No se encontraron fundas con esos filtros.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 ConfigurarDataGridView(fundasFiltradas);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al aplicar filtros: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al aplicar filtros: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -151,9 +131,44 @@ namespace GUICliente2
             }
         }
 
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Dispose();
         }
+
+        private async void btnListar_Click_1(object sender, EventArgs e)
+        {
+            btnListar.Enabled = false;
+
+            try
+            {
+                // Llamada directa al servicio para listar fundas
+                var fundas = await servicio.ListarFundas();
+
+                if (fundas == null || fundas.Count == 0)
+                {
+                    MessageBox.Show("No se encontraron fundas.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dataGridView1.DataSource = null;
+                    return;
+                }
+
+                // Configurar y mostrar las fundas en la grilla
+                ConfigurarDataGridView(fundas);
+            }
+            catch (HttpRequestException httpEx)
+            {
+                MessageBox.Show($"Error de conexión con el servidor: {httpEx.Message}", "Error de red", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener las fundas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnListar.Enabled = true;
+            }
+        }
+
     }
 }

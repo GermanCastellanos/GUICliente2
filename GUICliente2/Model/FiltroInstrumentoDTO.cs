@@ -6,8 +6,6 @@
     {
         public class FiltroInstrumentoDTO
         {
-            public string? Codigo { get; set; }
-            // Nombre o modelo parcial a filtrar
             public string? Nombre { get; set; }
 
             // Marca del instrumento

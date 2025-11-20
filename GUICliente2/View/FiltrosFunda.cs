@@ -1,4 +1,5 @@
-﻿using GUICliente2.Service.ClienteInstrumentos.Models;
+﻿using GUICliente2.Model;
+using GUICliente2.Service.ClienteInstrumentos.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace GUICliente2.View
 {
     public partial class FiltrosFunda : Form
     {
-        public event Action<FiltroInstrumentoDTO> OnFiltrosAplicados;
+        public event Action<FiltroFundaDTO> OnFiltrosAplicados;
         public FiltrosFunda()
         {
             InitializeComponent();
@@ -26,17 +27,14 @@ namespace GUICliente2.View
 
         private void btnFiltros_Click(object sender, EventArgs e)
         {
-            var filtro = new FiltroInstrumentoDTO
+            var filtro = new FiltroFundaDTO
             {
-                Codigo = cbCGuitarra.Checked ? textCGuitarra.Text.Trim() : null,
                 Nombre = cbNombre.Checked ? textNombre.Text.Trim() : null,
-                
                 PrecioMin = cbPrecioMin.Checked ? (double?)numPrecioMin.Value : null,
                 PrecioMax = cbPrecioMax.Checked ? (double?)numPrecioMax.Value : null,
-
-                TipoGuitarra = null,
-                Sensibilidad = null
+                codigoGuitarra = cbCGuitarra.Checked && long.TryParse(textCGuitarra.Text.Trim(), out long codigoGuitarra) ? codigoGuitarra : (long?)null,
             };
+
             OnFiltrosAplicados?.Invoke(filtro);
         }
         private void cbCodigo_CheckedChanged(object sender, EventArgs e)

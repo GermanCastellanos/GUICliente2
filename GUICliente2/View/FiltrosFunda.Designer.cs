@@ -103,7 +103,7 @@
             // 
             this.textCGuitarra.Enabled = false;
             this.textCGuitarra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCGuitarra.Location = new System.Drawing.Point(164, 23);
+            this.textCGuitarra.Location = new System.Drawing.Point(211, 24);
             this.textCGuitarra.Name = "textCGuitarra";
             this.textCGuitarra.Size = new System.Drawing.Size(159, 27);
             this.textCGuitarra.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             this.textNombre.Enabled = false;
             this.textNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombre.Location = new System.Drawing.Point(164, 63);
+            this.textNombre.Location = new System.Drawing.Point(211, 62);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(159, 27);
             this.textNombre.TabIndex = 8;
@@ -121,7 +121,7 @@
             // 
             this.numPrecioMin.Enabled = false;
             this.numPrecioMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecioMin.Location = new System.Drawing.Point(164, 103);
+            this.numPrecioMin.Location = new System.Drawing.Point(211, 103);
             this.numPrecioMin.Name = "numPrecioMin";
             this.numPrecioMin.Size = new System.Drawing.Size(159, 27);
             this.numPrecioMin.TabIndex = 9;
@@ -130,7 +130,7 @@
             // 
             this.numPrecioMax.Enabled = false;
             this.numPrecioMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecioMax.Location = new System.Drawing.Point(164, 144);
+            this.numPrecioMax.Location = new System.Drawing.Point(211, 144);
             this.numPrecioMax.Name = "numPrecioMax";
             this.numPrecioMax.Size = new System.Drawing.Size(159, 27);
             this.numPrecioMax.TabIndex = 10;
@@ -139,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(335, 244);
+            this.ClientSize = new System.Drawing.Size(382, 244);
             this.Controls.Add(this.numPrecioMax);
             this.Controls.Add(this.numPrecioMin);
             this.Controls.Add(this.textNombre);

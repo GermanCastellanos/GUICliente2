@@ -127,7 +127,7 @@ namespace GUICliente2
 
         private void agregarFunda_Click(object sender, EventArgs e)
         {
-            AgregarFundaGuitarraNueva gui = new();
+            AgregarFunda gui = new();
             gui.Show();
         }
 
@@ -152,6 +152,36 @@ namespace GUICliente2
         private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             ListarFunda gui = new();
+            gui.Show();
+        }
+
+        private void listarAmplificador_Click(object sender, EventArgs e)
+        {
+            ListarAmplificador gui = new();
+            gui.Show();
+        }
+
+        private void agregarAmplificador_Click(object sender, EventArgs e)
+        {
+            AgregarAmplificador gui = new();
+            gui.Show();
+        }
+
+        private void buscarAmplificador_Click(object sender, EventArgs e)
+        {
+            BuscarAmplificador gui =new();
+            gui.Show();
+        }
+
+        private void actualizarAmplificador_Click(object sender, EventArgs e)
+        {
+            ActualizarAmplificador gui = new();
+            gui.Show();
+        }
+
+        private void eliminarAmplificador_Click(object sender, EventArgs e)
+        {
+            EliminarAmplificador gui = new();
             gui.Show();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace GUICliente2
 {
-    partial class ListarFunda
+    partial class ListarAmplificador
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
-            this.btnFiltros = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 325);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 395);
+            this.btnCerrar.Location = new System.Drawing.Point(12, 401);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(110, 43);
-            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.Size = new System.Drawing.Size(110, 37);
+            this.btnCerrar.TabIndex = 5;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(678, 395);
+            this.btnListar.Location = new System.Drawing.Point(700, 401);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(110, 43);
-            this.btnListar.TabIndex = 2;
+            this.btnListar.Size = new System.Drawing.Size(110, 37);
+            this.btnListar.TabIndex = 4;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
-            this.btnListar.Click += new System.EventHandler(this.btnListar_Click_1);
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // btnFiltros
+            // dataGridView1
             // 
-            this.btnFiltros.Location = new System.Drawing.Point(347, 359);
-            this.btnFiltros.Name = "btnFiltros";
-            this.btnFiltros.Size = new System.Drawing.Size(110, 37);
-            this.btnFiltros.TabIndex = 7;
-            this.btnFiltros.Text = "Filtros";
-            this.btnFiltros.UseVisualStyleBackColor = true;
-            this.btnFiltros.Click += new System.EventHandler(this.btnFiltros_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(798, 321);
+            this.dataGridView1.TabIndex = 3;
             // 
-            // ListarFunda
+            // ListarAmplificador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnFiltros);
-            this.Controls.Add(this.btnListar);
+            this.ClientSize = new System.Drawing.Size(826, 450);
             this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "ListarFunda";
-            this.Text = "Listar Fundas";
+            this.Name = "ListarAmplificador";
+            this.Text = "Listar Amplificador";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -93,9 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.Button btnFiltros;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

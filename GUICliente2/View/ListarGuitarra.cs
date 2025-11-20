@@ -95,6 +95,7 @@ namespace GUICliente2
             dataGridView1.AllowUserToAddRows = false;
         }
 
+
         private void btnFiltros_Click(object sender, EventArgs e)
         {
             if (ventanaFiltros == null || ventanaFiltros.IsDisposed)
@@ -119,30 +120,18 @@ namespace GUICliente2
             btnListar.Enabled = false;
             try
             {
-                var guitarras = await _servicio.ListarGuitarras();
+                // Llamas al servicio que filtra directo en backend
+                var guitarras = await _servicio.FiltrarGuitarras(filtro);
 
-                // Filtrado local
-                var guitFiltradas = guitarras.AsQueryable();
-                if (!string.IsNullOrEmpty(filtro.Codigo))
-                    guitFiltradas = guitFiltradas.Where(g => g.Codigo.Contains(filtro.Codigo));
-                if (!string.IsNullOrEmpty(filtro.Nombre))
-                    guitFiltradas = guitFiltradas.Where(g => g.Nombre.Contains(filtro.Nombre));
-                if (!string.IsNullOrEmpty(filtro.Marca))
-                    guitFiltradas = guitFiltradas.Where(g => g.Marca.Contains(filtro.Marca));
-                if (filtro.PrecioMin.HasValue)
-                    guitFiltradas = guitFiltradas.Where(g => g.PrecioBase >= filtro.PrecioMin.Value);
-                if (filtro.PrecioMax.HasValue)
-                    guitFiltradas = guitFiltradas.Where(g => g.PrecioBase <= filtro.PrecioMax.Value);
-                // Otros filtros según tus propiedades
 
-                var filtrarLista = guitFiltradas.ToList();
-
-                if (filtrarLista.Count == 0)
+                if (guitarras == null || guitarras.Count == 0)
                 {
-                    MessageBox.Show("No se encontraron guitarras con esos filtros.", "Sin resultados",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No se encontraron guitarras con esos filtros.",
+                        "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dataGridView1.DataSource = null;
+                    return;
                 }
-                ConfigurarDataGridView(filtrarLista);
+                ConfigurarDataGridView(guitarras);
             }
             catch (Exception ex)
             {
@@ -153,6 +142,7 @@ namespace GUICliente2
                 btnListar.Enabled = true;
             }
         }
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Dispose();
